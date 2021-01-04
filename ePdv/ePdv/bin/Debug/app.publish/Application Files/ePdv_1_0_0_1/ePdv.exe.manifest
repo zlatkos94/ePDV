@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ePdv.exe" version="1.0.0.1" publicKeyToken="c791cc601649e25b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ePdv" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ePdv.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ePdv.exe" size="292800">
+      <assemblyIdentity name="ePdv" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Qb9+TaHNQQakZiqgqVFMbV01BDA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ePdv.exe.config" size="278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xhE3817yQdPewQeHufDeLqByFOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RSITCENTAR06\korisnik" issuerKeyHash="44bd209faedc33531dfaac50e05c721c8e2c0f8e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>jGbKk09/3sS1x29P8Onbp02hVeY=</DigestValue></Reference></SignedInfo><SignatureValue>f3gZGZRQb15NxLGzrV+HCWwWwnPMdeudic7HTFbvIZi9QKsdiUyL87FNLeHb1IYIjCuz+zIyPNiM+Z7efvO3Fu8b/yz58cS7BNbYzjTFiWhgMp84JdTeHdzlmWkMUCPH/v+BdHLdZZZoldvH2w0YH8PiGP9nlWuEPhv8EhuzJSw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vpEtkZdk3aiOxdBICeEFqhJ/GA7Cs2ohUYogT+Xn1cqucOYrPzycpEgVjHP7PwWfS6Vho4JO7EAJOb8nAf9MhtU18IejY48gKh0pUyS8kge2udwUOpxKnW1CtaYwZcGYqPiibSu+FqwSTDWtduFFNaUiXmCaAqFhhLkj8lVv8kU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e655a14da7dbe9f04f6fc7b5c4de7f4f93ca668c" Description="" Url=""><as:assemblyIdentity name="ePdv.exe" version="1.0.0.1" publicKeyToken="c791cc601649e25b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RSITCENTAR06\korisnik</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>jTmpNaq9n/U8SZE1qeQ8vnfTE8s=</DigestValue></Reference></SignedInfo><SignatureValue>rYiYfxGHMuNuRgK5LMrf0n9m8DYD7+ARPRBGA2kaq7BU01cAHGx6TRNTMkOyZLxK4+CQx6gedkiuHk6dWZNurXwc7mE8JBZcY0a1kJmxMLbx+P+oHGzbsai8qN+KZOE2/QRmN/SLEt6qLMtHNUSG5HNY+RuPR2932lPsnbtWrnc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vpEtkZdk3aiOxdBICeEFqhJ/GA7Cs2ohUYogT+Xn1cqucOYrPzycpEgVjHP7PwWfS6Vho4JO7EAJOb8nAf9MhtU18IejY48gKh0pUyS8kge2udwUOpxKnW1CtaYwZcGYqPiibSu+FqwSTDWtduFFNaUiXmCaAqFhhLkj8lVv8kU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQQdH0oO7qEJhCrWxh5SQV/zANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioAUgBTAEkAVABDAEUATgBUAEEAUgAwADYAXABrAG8AcgBpAHMAbgBpAGswHhcNMjAxMjI5MTI1NzA1WhcNMjExMjI5MTg1NzA1WjA1MTMwMQYDVQQDHioAUgBTAEkAVABDAEUATgBUAEEAUgAwADYAXABrAG8AcgBpAHMAbgBpAGswgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL6RLZGXZN2ojsXQSAnhBaoSfxgOwrNqIVGKIE/l59XKrnDmKz88nKRIFYxz+z8Fn0ulYaOCTuxACTm/JwH/TIbVNfCHo2OPICodKVMkvJIHtrncFDqcSp1tQrWmMGXBmKj4om0rvhasEkw1rXbhRTWlIl5gmgKhYYS5I/JVb/JFAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAKlw345mKFxw7TgBwGFGdKVWu6WOxcK75glKh6TZ6gi4k5VNt4zng6l5JxV4oelpn8brm9+NN+LpxLhlH6fIkSQDKNb0LE+7/5iAg1pqwse6LcMBt4iOjY00u5EjwsW9E5CqZ+G9uMwOa/m9sflvoeerpjtd5a0Y0eMioPhbUgV8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
